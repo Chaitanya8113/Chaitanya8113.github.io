@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Lakshmi Chaitanya Kaduru – Full-Stack Developer specializing in React, Spring Boot, Python, and MySQL. B.Tech CSE Graduate 2025.">
+    <meta name="keywords" content="Lakshmi Chaitanya Kaduru, Full-Stack Developer, React, Spring Boot, Python, Portfolio">
+    <meta name="author" content="Lakshmi Chaitanya Kaduru">
+    <title>Lakshmi Chaitanya Kaduru | Full-Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>LCK<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-in">Hello, I'm</div>
+            <h1 class="hero-name animate-in delay-1">
+                Lakshmi Chaitanya
+                <span class="hero-name-highlight">Kaduru</span>
+            </h1>
+            <div class="hero-title animate-in delay-2">
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description animate-in delay-3">
+                B.Tech CS Graduate crafting clean, scalable full-stack applications
+                with React, Spring Boot & Python.
+            </p>
+            <div class="hero-cta animate-in delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-socials animate-in delay-5">
+                <a href="https://github.com/Chaitanya8113" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/lakshmi-chaitanya-kaduru-409a07297" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:lakshmichaitanyakaduru@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a <strong>B.Tech Computer Science</strong> graduate (2025) from Visvodaya Engineering College,
+                        passionate about building modern, scalable web applications. With hands-on experience in
+                        <strong>full-stack development</strong> using React, Spring Boot, and MySQL, I bring ideas to life
+                        through clean code and intuitive interfaces.
+                    </p>
+                    <p>
+                        Proficient in Java, Python, SQL, and REST API development, I thrive on solving complex problems
+                        and continuously learning new technologies. I'm eager to contribute to a high-growth engineering
+                        team as an entry-level Software Developer.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Automation Scripts</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">about_me.js</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Lakshmi Chaitanya"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Full-Stack Developer"</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Nellore, AP"</span>,
+  <span class="code-property">education</span>: <span class="code-string">"B.Tech CSE"</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"React"</span>, <span class="code-string">"Spring Boot"</span>,
+    <span class="code-string">"Python"</span>, <span class="code-string">"MySQL"</span>,
+    <span class="code-string">"REST APIs"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"Building scalable apps"</span>,
+  <span class="code-property">available</span>: <span class="code-boolean">true</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JWT Auth</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Database Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Other</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Web Developer Intern</h3>
+                                <span class="timeline-company">Techno Hacks</span>
+                            </div>
+                            <span class="timeline-badge">Internship</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built <strong>3 responsive web pages</strong> using HTML5 & CSS3, optimizing assets and layout for cross-device compatibility</li>
+                            <li>Integrated <strong>JavaScript form validation</strong> on registration pages, reducing invalid submissions significantly</li>
+                            <li>Improved page load performance by <strong>30%</strong> through asset optimization and efficient CSS structuring</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Python Development Intern</h3>
+                                <span class="timeline-company">Techno Hacks</span>
+                            </div>
+                            <span class="timeline-badge">Internship</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed <strong>5+ Python automation scripts</strong> for data parsing and file processing, handling 1,000+ records per run</li>
+                            <li>Applied <strong>pandas and Python data structures</strong> to clean and analyze structured datasets with 95% accuracy</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span><span>Pandas</span><span>Automation</span><span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-type">Full-Stack</span>
+                            <a href="https://github.com/Chaitanya8113" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View on GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Student Portal</h3>
+                        <p class="project-desc">End-to-end web app with JWT-based user authentication, role-based access control, and a dynamic React dashboard. Connected frontend to backend via Axios; deployed on Vercel.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Spring Boot</span><span>MySQL</span><span>JWT</span><span>Axios</span><span>Vercel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-type">Frontend</span>
+                            <a href="https://github.com/Chaitanya8113" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View on GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Interactive Web Calculator</h3>
+                        <p class="project-desc">Fully functional calculator with keyboard input support, real-time expression evaluation, and modular JavaScript logic. Clean UI with responsive design.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academics</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card glass-card reveal">
+                    <div class="edu-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <h3>B.Tech – Computer Science Engineering</h3>
+                        <p class="edu-institution">Visvodaya Engineering College, Kavali</p>
+                        <p class="edu-note">Affiliated to JNTUA</p>
+                    </div>
+                </div>
+                <div class="edu-card glass-card reveal">
+                    <div class="edu-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Intermediate – MPC</h3>
+                        <p class="edu-institution">Narayana Junior College, Nellore</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l2-2l2 2l-2-5z"/><circle cx="12" cy="9" r="6"/><path d="m9 9 1.5 1.5L14 7"/></svg>
+                    </div>
+                    <div>
+                        <h4>Data Science</h4>
+                        <p>Coursera / NPTEL</p>
+                    </div>
+                </div>
+                <div class="cert-card glass-card reveal">
+                    <div class="cert-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l2-2l2 2l-2-5z"/><circle cx="12" cy="9" r="6"/><path d="m9 9 1.5 1.5L14 7"/></svg>
+                    </div>
+                    <div>
+                        <h4>Cloud Computing</h4>
+                        <p>NPTEL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:lakshmichaitanyakaduru@gmail.com" class="contact-card glass-card reveal" id="contact-email">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>lakshmichaitanyakaduru@gmail.com</p>
+                </a>
+                <a href="tel:+919440512553" class="contact-card glass-card reveal" id="contact-phone">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91 9440512553</p>
+                </a>
+                <a href="https://linkedin.com/in/lakshmi-chaitanya-kaduru-409a07297" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal" id="contact-linkedin">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Lakshmi Chaitanya Kaduru</p>
+                </a>
+                <a href="https://github.com/Chaitanya8113" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal" id="contact-github">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Chaitanya8113</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>LCK<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p>Designed & Built by Lakshmi Chaitanya Kaduru</p>
+                <p class="footer-year">© 2025 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
