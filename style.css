@@ -494,6 +494,11 @@ img {
     padding: var(--section-padding);
     position: relative;
     z-index: 1;
+    scroll-margin-top: 90px;
+}
+
+.hero {
+    scroll-margin-top: 90px;
 }
 
 .section-alt {
@@ -1165,16 +1170,30 @@ img {
     }
 }
 
-/* Scroll Reveal */
+/* Scroll Reveal — visible by default so content never depends on JS running;
+   JS opts an already-loaded page into the animated version via .js-reveal */
 .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+.js-reveal .reveal {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.reveal.revealed {
+.js-reveal .reveal.revealed {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .js-reveal .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
 
 /* ===================================

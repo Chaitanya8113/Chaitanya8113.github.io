@@ -4,6 +4,10 @@
    Nav Handling, Counter Animation
    =================================== */
 
+// Opt in to the animated scroll-reveal now that JS is running;
+// content stays visible by default if this script never loads.
+document.documentElement.classList.add('js-reveal');
+
 // ——————————————————————————————————————
 // 1. PARTICLE BACKGROUND
 // ——————————————————————————————————————
