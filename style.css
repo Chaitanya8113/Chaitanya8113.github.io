@@ -66,6 +66,8 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--accent-primary) var(--bg-primary);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -262,6 +264,7 @@ img {
     padding: 120px 24px 60px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .hero::before {
