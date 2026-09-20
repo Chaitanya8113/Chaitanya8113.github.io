@@ -123,8 +123,8 @@
 
     const phrases = [
         'Full-Stack Developer',
-        'React Enthusiast',
-        'Python Developer',
+        'MERN Stack Developer',
+        'React & Next.js Enthusiast',
         'Problem Solver',
         'Clean Code Advocate'
     ];
@@ -292,7 +292,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ——————————————————————————————————————
-// 7. TILT EFFECT ON PROJECT CARDS
+// 7. FOOTER YEAR
+// ——————————————————————————————————————
+(function initFooterYear() {
+    const el = document.getElementById('footer-year');
+    if (!el) return;
+    const start = 2025;
+    const current = new Date().getFullYear();
+    el.textContent = current > start ? `${start}–${current}` : `${start}`;
+})();
+
+// ——————————————————————————————————————
+// 8. TILT EFFECT ON PROJECT CARDS
 // ——————————————————————————————————————
 (function initTilt() {
     const cards = document.querySelectorAll('.project-card');
